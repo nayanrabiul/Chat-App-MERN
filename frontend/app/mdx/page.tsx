@@ -7,9 +7,10 @@ import markdownit from '@wcj/markdown-to-html';
 
 
 export const Myapp = () => {
-    const [markdown, setMarkdown] = useState('');
+        const [markdown, setMarkdown] = useState('');
 
     const Html = markdownit(markdown);
+    console.log(Html);
 
     return (
         <div className={'grid grid-cols-2 gap-4'}>
@@ -22,6 +23,7 @@ export const Myapp = () => {
                     <div dangerouslySetInnerHTML={{__html: Html}}/>
                 </article>
             </div>
+
         </div>
     );
 }

@@ -1,3 +1,4 @@
+@import '@/styles/prism.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -25,3 +26,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+.code-highlight .code-line:nth-child(1) .token:nth-child(3) {
+  color: #ff0000; /* red */
+}
+
